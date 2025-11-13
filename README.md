@@ -7,11 +7,9 @@ This project implements and evaluates multiple Recurrent Neural Network (RNN) ar
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/shekkari1999/homework3.git
 cd homework3
 ```
-
-Replace `<repository-url>` with your actual repository URL.
 
 ### Python Version
 - Python >= 3.11
