@@ -2,20 +2,84 @@
 
 This project implements and evaluates multiple Recurrent Neural Network (RNN) architectures for sentiment classification on the IMDb Movie Review Dataset.
 
-## Setup Instructions
+## Getting Started
+
+### Clone the Repository
+
+```bash
+git clone <repository-url>
+cd homework3
+```
+
+Replace `<repository-url>` with your actual repository URL.
 
 ### Python Version
 - Python >= 3.11
 
+### Virtual Environment Setup
+
+It's recommended to use a virtual environment to isolate project dependencies.
+
+#### Option 1: Using `uv` (Recommended)
+
+If you have `uv` installed:
+
+```bash
+# Create and activate virtual environment
+uv venv
+
+# Activate the virtual environment
+# On macOS/Linux:
+source .venv/bin/activate
+
+# On Windows:
+# .venv\Scripts\activate
+
+# Install dependencies
+uv sync
+```
+
+#### Option 2: Using Standard `venv`
+
+If you prefer using Python's built-in `venv`:
+
+```bash
+# Create virtual environment
+python3 -m venv .venv
+
+# Activate the virtual environment
+# On macOS/Linux:
+source .venv/bin/activate
+
+# On Windows:
+# .venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+**Note**: After activation, you should see `(.venv)` in your terminal prompt.
+
+### Deactivate Virtual Environment
+
+When you're done working, you can deactivate the virtual environment:
+
+```bash
+deactivate
+```
+
+## Setup Instructions
+
 ### Dependencies
-Install dependencies using one of the following methods:
+
+If you haven't installed dependencies during virtual environment setup, you can install them now:
 
 **Using pip:**
 ```bash
 pip install -r requirements.txt
 ```
 
-**Using uv (recommended):**
+**Using uv:**
 ```bash
 uv sync
 ```
@@ -58,9 +122,18 @@ Place the `imdb.csv` file in the `data/` directory. The dataset should contain 5
 - `sentiment`: Either 'positive' or 'negative'
 
 ### 2. Run Training and Evaluation
+
+Make sure your virtual environment is activated, then:
+
 ```bash
 cd src
 python train.py
+```
+
+Or from the project root:
+
+```bash
+python src/train.py
 ```
 
 The script will:
